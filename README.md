@@ -9,11 +9,11 @@ cd yolov5
 pip install -r requirements.txt  # install
 ```
 
-[Tips for Best Training Results](https://github.com/ultralytics/yolov5/wiki/Tips-for-Best-Training-Results)
+
 
 </details>
 
-<details open>
+<details >
 <summary>Inference</summary>
 
 YOLOv5 [PyTorch Hub](https://github.com/ultralytics/yolov5/issues/36) inference. [Models](https://github.com/ultralytics/yolov5/tree/master/models) download automatically from the latest
@@ -74,7 +74,7 @@ python train.py --data coco.yaml --cfg yolov5n.yaml --weights '' --batch-size 12
 
 </details>
 
-<details open>
+<details >
 <summary>Organising your dataset in yaml format</summary>
 
 1. Create Dataset with yaml config, Becarfull that paths on the .yaml are respected. 
@@ -113,7 +113,7 @@ Organize your train and val images and labels according to the example below. YO
 ![alt text](https://user-images.githubusercontent.com/26833433/134436012-65111ad1-9541-4853-81a6-f19a3468b75f.png)
 </details>
 
-<details open>
+<details >
 <summary>Training on custom dataset</summary>
 
 The commands below trains YOLOv5 on custom dataset. 
@@ -148,7 +148,7 @@ elif logger == 'ClearML':
 </details>
 
 
-<details open>
+<details >
 <summary> Hyperparameter Optimization(for clearml and optuna)</summary>
 To run hyperparameter optimization locally, we've included a pre-made script for you. Just make sure a training task has been run at least once, so it is in the ClearML experiment manager, we will essentially clone it and change its hyperparameters.
 
@@ -162,7 +162,7 @@ python utils/loggers/clearml/hpo.py
 
 </details>
 
-<details open>
+<details >
 <summary>Transfer Learning with Frozen Layers </summary>
 Looking at the model architecture we can see that the model backbone is layers 0-9, so we can define the freeze list to contain all modules with 'model.0.' - 'model.9.' in their names.
 
@@ -181,3 +181,6 @@ Results are way better if you only freeze the backbone, check the graphs at the 
 There is a benchmark between a full freeze, only backbone freeze and the back bone + head freezed (expect the last layer)
 
 </details>
+
+
+[Tips for Best Training Results](https://github.com/ultralytics/yolov5/wiki/Tips-for-Best-Training-Results)
