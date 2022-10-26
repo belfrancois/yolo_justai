@@ -74,7 +74,7 @@ python train.py --data coco.yaml --cfg yolov5n.yaml --weights '' --batch-size 12
 
 </details>
 
-<details>
+<details open>
 <summary>Organising your dataset in yaml format</summary>
 
 1. Create Dataset with yaml config, Becarfull that paths on the .yaml are respected. 
@@ -113,7 +113,7 @@ Organize your train and val images and labels according to the example below. YO
 ![alt text](https://user-images.githubusercontent.com/26833433/134436012-65111ad1-9541-4853-81a6-f19a3468b75f.png)
 </details>
 
-</details>
+<details open>
 <summary>Training on custom dataset</summary>
 
 The commands below trains YOLOv5 on custom dataset. 
@@ -148,7 +148,7 @@ elif logger == 'ClearML':
 </details>
 
 
-</details>
+<details open>
 <summary> Hyperparameter Optimization(for clearml and optuna)</summary>
 To run hyperparameter optimization locally, we've included a pre-made script for you. Just make sure a training task has been run at least once, so it is in the ClearML experiment manager, we will essentially clone it and change its hyperparameters.
 
@@ -162,7 +162,7 @@ python utils/loggers/clearml/hpo.py
 
 </details>
 
-</details>
+<details open>
 <summary>Transfer Learning with Frozen Layers </summary>
 Looking at the model architecture we can see that the model backbone is layers 0-9, so we can define the freeze list to contain all modules with 'model.0.' - 'model.9.' in their names.
 
