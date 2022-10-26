@@ -9,6 +9,11 @@ cd yolov5
 pip install -r requirements.txt  # install
 ```
 
+If you want to do a custom training, the different steps should be : 
+- 1 Create your dataset with the correct format and respecting the paths
+- 2 Set up clear ml and optuna if necessary
+- 3 Select a transfer learning if necessary
+- 4 Train
 
 
 </details>
