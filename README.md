@@ -9,7 +9,7 @@ cd yolov5
 pip install -r requirements.txt  # install
 ```
 
-If you want to do a custom training, the different steps should be : 
+If you want to do a custom training, the differents steps should be : 
 - 1 Create your dataset with the correct format and respecting the paths
 - 2 Set up clear ml and optuna if necessary
 - 3 Select a transfer learning if necessary
@@ -149,7 +149,7 @@ elif logger == 'Comet':
 elif logger == 'ClearML':
   %pip install -q clearml && clearml-init
 ```
-
+DO IT BEFORE STARTING YOUR TRAINING OR IT WON'T WORK
 </details>
 
 
